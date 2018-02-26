@@ -14,6 +14,9 @@ import random
 import string
 import sys
 
+
+driverLocation='/Users/tarekadel/Script/chromedriver'
+
 def CreateAccount( driver, email, username, password, day, month, year ):
 	elem = driver.find_element_by_name("email")
 	elem.clear()
@@ -37,7 +40,7 @@ def CreateAccount( driver, email, username, password, day, month, year ):
 	sleep(15)
 
 def StartLoop(email, username, password, day, month, year):
-	driver = webdriver.Chrome('/Users/tarekadel/Script/chromedriver')
+	driver = webdriver.Chrome(driverLocation)
 	isComplete = False
 	while not isComplete:
 		delay = 5 #5 seconds
@@ -48,7 +51,7 @@ def StartLoop(email, username, password, day, month, year):
 			isComplete = True
 		except: 
 		  driver.close()
-		  driver = webdriver.Chrome('/Users/tarekadel/Script/chromedriver')
+		  driver = webdriver.Chrome(driverLocation)
 
 
 with open('accounts.txt') as csvfile:

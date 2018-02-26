@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "maxCreator", "maxCreator.csproj", "{55A3D8C4-63E8-485C-8239-361948247744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGKit.FantasyNameGenerator", "..\FantasyNameGenerator-master\src\RPGKit.FantasyNameGenerator\RPGKit.FantasyNameGenerator.csproj", "{76C08384-8930-475B-8DA4-B9EE1D3C58A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55A3D8C4-63E8-485C-8239-361948247744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A3D8C4-63E8-485C-8239-361948247744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A3D8C4-63E8-485C-8239-361948247744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A3D8C4-63E8-485C-8239-361948247744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76C08384-8930-475B-8DA4-B9EE1D3C58A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C08384-8930-475B-8DA4-B9EE1D3C58A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C08384-8930-475B-8DA4-B9EE1D3C58A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C08384-8930-475B-8DA4-B9EE1D3C58A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -16,8 +16,9 @@ import sys
 
 
 driverLocation='/Users/tarekadel/Script/chromedriver'
+delay = 5 #5 seconds
 
-def CreateAccount( driver, email, username, password, day, month, year ):
+def CreateAccount( driver, region, email, username, password, day, month, year ):
 	elem = driver.find_element_by_name("email")
 	elem.clear()
 	elem.send_keys(email)
@@ -37,14 +38,13 @@ def CreateAccount( driver, email, username, password, day, month, year ):
 	driver.execute_script("arguments[0].click();", element)
 	element = driver.find_element_by_class_name('c-button-primary')
 	driver.execute_script("arguments[0].click();", element)
-	sleep(15)
+	sleep(delay + 10)
 
-def StartLoop(email, username, password, day, month, year):
+def StartLoop(region, email, username, password, day, month, year):
 	driver = webdriver.Chrome(driverLocation)
 	isComplete = False
 	while not isComplete:
-		delay = 5 #5 seconds
-		driver.get("https://signup.euw.leagueoflegends.com/en/signup/")
+		driver.get("https://signup." + region +".leagueoflegends.com/en/signup/")
 		sleep(delay)
 		try:
 			CreateAccount(driver, email, username, password, day, month, year)
@@ -60,7 +60,7 @@ with open('accounts.txt') as csvfile:
 	next(readCSV, None)  # skip the headers
 	for row in readCSV:
 		dt = parser.parse(row[3])
-		StartLoop(row[4], row[1], row[2], str(dt.day), dt.strftime("%B"), str(dt.year))
+		StartLoop(row[0], row[4], row[1], row[2], str(dt.day), dt.strftime("%B"), str(dt.year))
 
 
 

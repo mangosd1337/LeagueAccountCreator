@@ -1,3 +1,0 @@
-﻿Female Warrior Names
-
-names[0] = Female Braxllyn Blackhunter the Virtuous of Dagger Coast

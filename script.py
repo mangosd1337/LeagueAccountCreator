@@ -8,17 +8,12 @@ from selenium.webdriver.support.ui import Select
 from time import sleep
 import csv
 from dateutil import parser
-from random import choice
-from string import ascii_lowercase, digits
-import random
-import string
-import sys
 
 
 driverLocation='/Users/tarekadel/Script/chromedriver'
 delay = 5 #5 seconds
 
-def CreateAccount( driver, region, email, username, password, day, month, year ):
+def CreateAccount( driver, email, username, password, day, month, year ):
 	elem = driver.find_element_by_name("email")
 	elem.clear()
 	elem.send_keys(email)

@@ -1,5 +1,0 @@
-/Volumes/Untitled/Account Creator/maxCreator/obj/Debug/maxCreator.captchaForm.resources
-/Volumes/Untitled/Account Creator/maxCreator/obj/Debug/maxCreator.Form1.resources
-/Volumes/Untitled/Account Creator/maxCreator/obj/Debug/maxCreator.Properties.Resources.resources
-/Volumes/Untitled/Account Creator/maxCreator/obj/Debug/maxCreator.csproj.GenerateResource.Cache
-/Volumes/Untitled/Account Creator/maxCreator/obj/Debug/maxCreator.csproj.CoreCompileInputs.cache

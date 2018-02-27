@@ -99,13 +99,17 @@ def StartLoop(region, email, username, password, day, month, year):
 			isComplete = True
 			sleep(delay + 10)
 		except: 
-			try:
-				CreateAccountNewStyle(driver, email, username, password, day, month, year)
-				isComplete = True
-				sleep(delay + 10)
-			except: 
-			  driver.close()
-			  driver = webdriver.Chrome(driverLocation)
+			if region == 'na':
+				try:
+					CreateAccountNewStyle(driver, email, username, password, day, month, year)
+					isComplete = True
+					sleep(delay + 10)
+				except: 
+				  driver.close()
+				  driver = webdriver.Chrome(driverLocation)
+			else:
+				driver.close()
+				driver = webdriver.Chrome(driverLocation)
 
 
 with open('accounts.txt') as csvfile:

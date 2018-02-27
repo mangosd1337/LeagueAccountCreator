@@ -14,3 +14,9 @@ install dateutil with command "pip install python-dateutil"</br>
 open "script.py" change driverLocation to the chromedriver you installed.</br>
 if you dont know leave it blank like this driverLocation = ''</br>
 start script.py using "python script.py" in cmd</br>
+</br>
+
+</br>
+</br>
+</br>
+Also credits to the creator of maxCreator
